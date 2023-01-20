@@ -9,16 +9,16 @@
     
  console.log(myFunction(1))*/
 
- /*const myFunction= (a) => {
+ const myFunction= (a) => {
     let palabra= Array.from(a) .reverse() .join('')
     return palabra == a;
 
  }
- console.log(myFunction('radar'))*/
+ console.log(myFunction('radar'))
 
- const ejercicio=(str)=>{
+ /*const ejercicio=(str)=>{
     let result= str.split('') .every((/a-z/gi), )
     return result
  }
 
- console.log (ejercicio('El veloz murciélago hindú comía feliz cardillo y kiwi. La cigüeña tocaba el saxofón detrás del palenque de paja.'))
+ console.log (ejercicio('El veloz murciélago hindú comía feliz cardillo y kiwi. La cigüeña tocaba el saxofón detrás del palenque de paja.'))*/
