@@ -1,0 +1,1 @@
+// 16) Te dan dos ángulos interiores (en grados) de un triángulo. Escriba una función para devolver el 3er. Nota: solo se probarán los números enteros positivos.

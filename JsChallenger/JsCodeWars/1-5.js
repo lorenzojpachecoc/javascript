@@ -52,7 +52,21 @@ console.log(toRepeat(2,'Bye'))*/
 
 // 5) Complete la solución para que invierta la cadena que se le pasó.
 
-const invertedWord=(str)=>{
+/*const invertedWord=(str)=>{
     return (str.split('')).reverse().join('')
 }
-    console.log(invertedWord('world'))
+    console.log(invertedWord('world'))*/
+
+// crear una funcion que resiva un array de string como parametro y debe devolver un array de objeto con las propiedades keys: palabra, longitud y mensaje. En la palabra contendrá el string del array, en la longitud la longitud del elemento y el mensaje deberá decir si la longitud es >10 'es muy largo' y no lo es: 'estandar'
+
+/*const arrObj=()=>{
+
+}
+
+console.log(arrObj(['Oliver', 'estructuras', 'algoritmos', 'estamostrabajando']))*/
+
+const myArr=(arr)=>{
+ return arr[Math.floor(Math.random() * (Math.floor(array.length) - Math.ceil(0) ) + Math.ceil(0))];
+}
+
+console.log(myArr('ANA',{name:jose}))
