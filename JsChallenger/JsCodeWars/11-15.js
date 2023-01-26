@@ -49,8 +49,8 @@ console.log(bmi(70,1.5))*/
   
   // 15) Cree una función llamada _if que tome 3 argumentos: un valor booly 2 funciones (que no toman ningún parámetro): func1yfunc2. Cuando bool es veraz, func1debe llamarse, de lo contrario llamar al func2.
 
-  const _if=(bool,func1,func2)=>{
-    return bool ? func1() : func2()
+const _if=(bool,func1,func2)=>{
+    return bool ? func1 : func2
 
   }
   console.log(_if(true,'TRUE','FALSE'))

@@ -42,4 +42,6 @@ console.log(integers([1, 2, 3]))*/
 
   }
 
-  console.log(trimester(10))
+  console.log(trimester(9))
+
+  
