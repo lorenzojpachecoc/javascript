@@ -46,7 +46,7 @@ output = ["Open", "Open", "Senior", "Open", "Open", "Senior"]*/
 console.log(peopleObj); // Output: { John: 23, Alice: 28, Bob: 32 }
 NOTA: usar reduce*/
 
-/*const peopleObj=(arr)=>{
+/*onst peopleObj=(arr)=>{
     return arr.reduce((prev,{name,age})=>( {...prev,[name] : age}),{})
  }
 console.log(peopleObj([ { name: 'John', age: 23 },
