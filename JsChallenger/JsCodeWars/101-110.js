@@ -52,7 +52,7 @@ console.log(names(['jorge','maria','jose','bob','pat','maria','jose','jose']))*/
 
 // 106) Para crear este acumulado, podemos acceder a nuestra clase hipotética footballLeague, que contiene el array ‘teams’. Este array tiene distintos equipos que, a su vez, tienen la propiedad goalsFor. utiliza el método reduce de JavaScript para crear el acumulado de goles a favor
 
-const footballLeague=(teams)=>{
+/*const footballLeague=(teams)=>{
  return teams.reduce((prev,cur)=>(prev+cur.goalsFor),0)
 }
 
@@ -60,17 +60,11 @@ console.log(footballLeague( [
 	{ name: "madrid",  goalsFor: 21 },
 	{ name: "barcelona", goalsFor: 32 },
 	{ name: "atletico", goalsFor: 16 }
-  ]))
+  ]))*/
 
   // 107) Dado un array de objeto, sería más conveniente obtener un objeto y acceder directamente por su id. Utiliza .reduce() para convertir el listado de productos original en una estructura de datos más conveniente donde el valor del id encabeze el objeto
-
- /* const products=(obj)=>{
-	return obj.reduce((prev,cur)=>{
-		Object.assign(prev, {[cur.id]:cur})
-	})
-  }
-
-  console.log(products([
+  // pendiente por resolver
+ /* const arrObj=[
 	{
 	  id: "apple-watch-s6",
 	  nombre: "Apple Watch Series 6",
@@ -86,4 +80,47 @@ console.log(footballLeague( [
 	  nombre: "Macbook Air",
 	  precio: "1.199,00 €",
 	},
-  ]))*/
+  ]
+  
+  const products=(arr)=>{
+	return arr.reduce((prev,cur)=>({...prev, [cur.id]:cur}), {})
+  }
+
+  console.log(products(arrObj))*/
+
+  // 108)  crear un objeto a partir de un arreglo, agregando o contando elementos a partir de ciertas condiciones.
+
+  /*const words = [
+	"the",
+	"quick",
+	"brown",
+	"fox",
+	"jumps",
+	"over",
+	"the",
+	"lazy",
+	"dog",
+  ];
+  
+  const wordCount = words.reduce((acc, cur) => {
+	acc[cur] = (acc[cur] || 0) + 1;
+	return acc;
+  }, {});
+
+  console.log(wordCount)*/
+
+  // 109) cálcular el promedio de los valores en un arreglo de numeros dados
+
+
+  /*const average = (grades) =>{
+  return grades.reduce((acc, cur) => acc + cur, 0) / grades.length;
+  
+ }
+  console.log(average([92, 95, 87, 60, 72]));*/
+
+  // 110) Busca el valor máximo dentro de un arreglo de numeros
+
+  const max = (numbers) =>{
+	return numbers.reduce((prev, cur) => (prev > cur ? prev : cur))
+   }
+	console.log(max([92, 95, 87, 60, 72]))
