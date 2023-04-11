@@ -35,10 +35,96 @@ console.log(namesReals([
 
 // 114) queremos un array de regreso con el cuadrado de aquellos elementos que son pares
 
-const numbers = (arr) => {
+/*const numbers = (arr) => {
  return arr.map((item)=> item % 2 == 0 ? item*item : item)
 }
 
-console.log(numbers([2, 17, 4, 8, 10, 3, 5, 6, 7]))
+console.log(numbers([2, 17, 4, 8, 10, 3, 5, 6, 7]))*/
 
-// 115) 
+// 115)  logra calcular el promedio de calificaciones de los alumnos de una salon de clases. La calificaciones se encontraran en un array multidimensional. El objetivo es retornar un array con el promedio de cada alumno
+
+/*const alum = (prom) => {
+  return prom.map((item)=>item.reduce((prev,cur)=>prev+cur))
+    
+}
+
+console.log(alum([[5,8,4], [2,5,2], [8,8,9]]))*/
+
+// 116) invierte el valorel contenido de un areglo utilizando el metodo map
+
+/*const exam = (numbers) => {
+  return numbers.map((item,index,arr)=>arr[(arr.length -1) - index])
+}
+
+console.log(exam([1,2,3]))*/
+
+// 117) segun el array de objetos dado, agrega una nueva propiedad llamada taxes donde su valor sea el 10% del precio a cada producto
+
+/*let catalog= [
+  {
+    id: 23,
+    name: 'Red notebook',
+    price: 2.25
+  }, {
+    id: 24,
+    name: 'Black pens',
+    price: 1.00
+  }, {
+    id: 25,
+    name: 'Blue pens',
+    price: 1.50
+  }, {
+    id: 26,
+    name: 'Calculator',
+    price: 12.5
+  }
+]
+
+const catalogWithTax = catalog.map ((item)=>{
+  return {
+    id: item.id,
+    name: item.name,
+    price: item.price,
+    tax: item.price * .10
+  }
+})
+
+console.log(catalogWithTax)*/
+
+// 118) Cree una función que tome una matriz de objetos (comestibles) que calcule el precio total y lo devuelva como un número. utiliza el metodo map y todos aquellos adicionales que puedas necesitar. Un objeto de supermercado tiene un producto, una cantidad y un precio
+
+/*const getTotalPrice= (arr) => {
+ return arr.map((item) => item.quantity * item.price).reduce((prev,cur)=> prev+cur)
+}
+console.log(getTotalPrice([
+  { product: "Milk", quantity: 1, price: 1.50 },
+  { product: "Eggs", quantity: 12, price: 0.10 },
+  { product: "Bread", quantity: 2, price: 1.60 },
+  { product: "Cheese", quantity: 1, price: 4.50 }
+]))*/
+
+// 119) Dado un conjunto de números, devuelve el inverso aditivo de cada uno. Cada positivo se vuelve negativo, y los negativos se vuelven positivos.
+
+/*const invert=(arr)=>{
+    return arr.map((item)=>-item)
+
+  }
+
+  console.log(invert([1,-2,6,-4,5]))*/
+
+  // 120)
+
+const usersByLikes = (myUsers)=>{
+   return myUsers.map((item) => {
+    const container = {};
+
+    container[item.name] = item.likes;
+    container.age = item.name.length * 10;
+
+}
+
+console.log(usersByLikes([
+  { name: 'shark', likes: 'ocean' },
+  { name: 'turtle', likes: 'pond' },
+  { name: 'otter', likes: 'fish biscuits' }
+]))
