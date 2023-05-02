@@ -27,10 +27,15 @@
 
   // 159) Necesitamos una función que pueda transformar una cadena en un número. ¿Qué formas de lograr esto conoces? Nota: no se preocupe, todas las entradas serán cadenas y cada cadena es una representación perfectamente válida de un número entero.
 
-  const stringToNumber = (str) => {
+  /*const stringToNumber = (str) => {
     return Number(str)
   }
 
-    console.log(stringToNumber('1234'))
+    console.log(stringToNumber('1234'))*/
 
-  // 160) 
+  // 160) Complete el método o la función para que convierta las palabras delimitadas por guiones o guiones bajos en mayúsculas y minúsculas . La primera palabra dentro de la salida debe estar en mayúsculas solo si la palabra original estaba en mayúsculas (conocido como Upper Camel Case, también conocido como caso Pascal). Las siguientes palabras deben estar siempre en mayúscula.
+
+ const toCamelCase = (str) => {
+    return str.replace(/[-_](.)/g, (_, item) => item.toUpperCase())
+  }
+    console.log(toCamelCase('the_stealth_warrior'))
