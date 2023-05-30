@@ -43,12 +43,12 @@ console.log(numbers([2, 17, 4, 8, 10, 3, 5, 6, 7]))*/
 
 // 115)  logra calcular el promedio de calificaciones de los alumnos de una salon de clases. La calificaciones se encontraran en un array multidimensional. El objetivo es retornar un array con el promedio de cada alumno
 
-/*const alum = (prom) => {
-  return prom.map((item)=>item.reduce((prev,cur)=>prev+cur))
-    
+const alum = (prom) => {
+  let result= prom.map((item)=>item.reduce((prev,cur)=>prev+cur))
+    return result.map((item)=> item/prom.length)
 }
 
-console.log(alum([[5,8,4], [2,5,2], [8,8,9]]))*/
+console.log(alum([[5,8,4], [2,5,2], [8,8,9]]))
 
 // 116) invierte el valorel contenido de un areglo utilizando el metodo map
 
@@ -114,17 +114,14 @@ console.log(getTotalPrice([
 
   // 120)
 
-const usersByLikes = (myUsers)=>{
+/*const usersByLikes = (myUsers)=>{
    return myUsers.map((item) => {
     const container = {};
 
     container[item.name] = item.likes;
     container.age = item.name.length * 10;
 
-}
-
-console.log(usersByLikes([
-  { name: 'shark', likes: 'ocean' },
-  { name: 'turtle', likes: 'pond' },
-  { name: 'otter', likes: 'fish biscuits' }
-]))
+})}
+  console.log(usersByLikes([{ name: 'shark', likes: 'ocean' },
+                            { name: 'turtle', likes: 'pond' },
+                            { name: 'otter', likes: 'fish biscuits' } ]))*/

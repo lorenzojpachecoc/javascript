@@ -16,10 +16,10 @@ return employed === true && vacation === false ? true : false
 
 // 183) Implemente una función que convierta el valor booleano dado en su representación de cadena. Nota: Solo se darán entradas válidas.
 
-const booleanToString = (b) => {
+/*const booleanToString = (b) => {
     return b.toString()
   }
-    console.log(booleanToString(true))
+    console.log(booleanToString(true))*/
 
 // 184) Dada una lista y un número, cree una nueva lista que contenga cada número listcomo máximo N, sin reordenar.Por ejemplo, si el número de entrada es 2, y la lista de entrada es [1,2,3,1,2,1,2,3], toma [1,2,3,1,2], suelta el siguiente [1,2]ya que esto conduciría a 1y 2estar en los 3tiempos de resultado, y luego toma 3, lo que lleva a [1,2,3,1,2,3]. Con list [20,37,20,21]y number 1, el resultado sería [20,37,21].
 

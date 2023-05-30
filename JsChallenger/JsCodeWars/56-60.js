@@ -20,13 +20,12 @@
     console.log(jadenCase('How can mirrors be real if our eyes arent real'))*/
 
     // 58) Si　a = 1, b = 2, c = 3 ... z = 26 Entoncesl + o + v + e = 54 yf + r + i + e + n + d + s + h + i + p = 108 Entonces friendshipes el doble de fuerte que love:-) Tu tarea es escribir una función que calcule el valor de una palabra basándose en la suma de las posiciones alfabéticas de sus caracteres. La entrada siempre se hará solo con letras minúsculas y nunca estará vacía.
-// por resolver
     
-    /*const wordsToMarks=(string)=>{
-  return string
+    const wordsToMarks=(str)=>{
+  return [...str].reduce((a,b)=>a+=b.charCodeAt(0)-96,0)
 }
 
-  console.log(wordsToMarks('attitude'))*/
+  console.log(wordsToMarks('attitude'))
 
   // 59) Los cajeros automáticos permiten códigos PIN de 4 o 6 dígitos y los códigos PIN no pueden contener nada más que exactamente 4 dígitos o exactamente 6 dígitos.Si a la función se le pasa una cadena de PIN válida, devuelva true, de lo contrario, devuelva false.
 /*Ejemplos ( Entrada --> Salida)
@@ -42,9 +41,9 @@
 
 //60) Dada una lista 2D (anidada) (matriz, vector, ..) de tamaño m * n, su tarea es encontrar la suma de los valores mínimos en cada fila. Por ejemplo: [ [ 1, 2, 3, 4, 5 ]        #  minimum value of row is 1, [ 5, 6, 7, 8, 9 ]        #  minimum value of row is 5 , [ 20, 21, 34, 56, 100 ]  #  minimum value of row is 20] Entonces la función debería regresar 26porque la suma de los mínimos es 1 + 5 + 20 = 26. Nota: Siempre se le dará una lista no vacía que contiene valores positivos.
 
-const sumOfMinimums=(arr)=> {
-  return arr.reduce((a, b) => a + Math.min(...b), 0);
+/*const sumOfMinimums=(arr)=> {
+  return arr.reduce((a, b) => a + Math.min(...b), 0)
 }
 
-console.log(sumOfMinimums([[7, 9, 8, 6, 2], [6, 3, 5, 4, 3], [5, 8, 7, 4, 5]]))
+console.log(sumOfMinimums([[7, 9, 8, 6, 2], [6, 3, 5, 4, 3], [5, 8, 7, 4, 5]]))*/
 

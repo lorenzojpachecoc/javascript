@@ -21,8 +21,8 @@
     console.log(reverseWords('hello world!'))*/
 
 // 139) Probablemente conozcas el sistema de "me gusta" de Facebook y otras páginas. Las personas pueden "gustar" publicaciones de blog, imágenes u otros elementos. Queremos crear el texto que debe mostrarse junto a dicho elemento. Implemente la función que toma una matriz que contiene los nombres de las personas a las que les gusta un artículo. Debe devolver el texto de la pantalla como se muestra en los ejemplos:
-    //preguntar
-/*const likes = (names) => {
+
+const likes = (names) => {
     names = names || [];
     switch(names.length){
       case 0: return 'no one likes this'; break;
@@ -33,14 +33,14 @@
     }
   }
 
-    console.log(likes(['Max']))*/
+    console.log(likes(['Max']))
 
 // 140) La raíz digital es la suma recursiva de todos los dígitos de un número. Dado n, tome la suma de los dígitos de n. Si ese valor tiene más de un dígito, continúe reduciendo de esta manera hasta que se produzca un número de un solo dígito. La entrada será un número entero no negativo.
 
-const digitalRoot = (n) => {
+/*const digitalRoot = (n) => {
   let result= String(n).split('').map((item)=>Number(item)).reduce((prev,cur)=> prev+cur)
   return String(result).split('').map((item)=>Number(item)).reduce((prev,cur)=> prev+cur)
 }
-        console.log(digitalRoot(57988))
+        console.log(digitalRoot(57988))*/
 
         // while: result.length!=2

@@ -37,6 +37,8 @@ Calcule la suma de los números en la n- ésima fila de este triángulo (comenza
   // 175) Se le proporciona una matriz (que tendrá una longitud de al menos 3, pero podría ser muy grande) que contiene números enteros. La matriz está completamente compuesta por enteros impares o completamente compuesta por enteros pares excepto por un solo entero N. Escriba un método que tome la matriz como argumento y devuelva este "valor atípico" N.
 
   const findOutlier = (integers) => {
-    return 
+  let pair = integers.filter((item)=>item%2==0)
+  let odd = integers.filter((item)=>item%2!==0)
+  return pair.length==1? pair[0] : odd[0]
   }
-    console.log(findOutlier([2,6,8,10,3]))
+    console.log(findOutlier([1,2,3]))

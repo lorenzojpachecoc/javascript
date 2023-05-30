@@ -8,14 +8,14 @@
 
   // 197) Complete la función que toma dos enteros ( a, b, where a < b) y devuelva una matriz de todos los enteros entre los parámetros de entrada, incluidos ellos.
 
-  /*const between = (a, b)=> {
+  const between = (a, b)=> {
   let arr = [];
   for (let i = a; i <=b ; i++) {
     arr.push(i);
   }
   return arr;
 }
-  console.log(between(-2,2))*/
+  console.log(between(-2,2))
 
   // 198) Se da una secuencia ordenada de números del 1 al N. Es posible que se haya eliminado un número, luego se mezclaron los números restantes. Encuentra el número que se eliminó.
 
@@ -35,7 +35,7 @@
 
   // 200) Escriba una función que verifique si una cadena dada (insensible a mayúsculas y minúsculas) es un palíndromo . Un palíndromo es una palabra, número, frase u otra secuencia de símbolos que se lee igual hacia atrás que hacia adelante, como señora o coche de carreras, la fecha y hora 21/12/33 12:21, y la oración: "Un hombre, un plan, un canal – Panamá".
 
-  const isPalindrome = (x) => {
+  /*const isPalindrome = (x) => {
   return x.toLowerCase() === x.toLowerCase().split('').reverse().join('')
 }
-  console.log(isPalindrome('Abba'))
+  console.log(isPalindrome('Abba'))*/

@@ -39,10 +39,10 @@ console.log(snail(10, 3, 2))*/
 }
     console.log(century(1601))*/
 
-// 20) El gato en el sombrero tiene al gato A debajo de su sombrero, el gato A tiene al gato B debajo de su sombrero y así sucesivamente hasta Z. The Cat In The Hat tiene 2,000,000 de unidades de gatos de altura. Cada gato es 2,5 veces más grande que el gato debajo de su sombrero.Encuentra la altura total de los gatos si están parados uno encima del otro. El conteo comienza desde el gato en el sombrero. n = el número de gatos. fijo a 3 decimales.
+// 20) El famoso Capitán Schneider te ha dado una misión muy sencilla. Cualquier dato que llegue a través del sistema se asegura de que solo los caracteres no especiales vean la luz del día.Cree una función que, dada una cadena, retenga solo las letras AZ (mayúsculas y minúsculas), 0-9 dígitos y espacios en blanco. Además, devuelve "¡No es una cadena!" si el tipo de entrada no es una cadena.
 
-const height=(n)=> {
-    
-}
+const nothingSpecial= (str) => {
+   return typeof str === 'string' ? str.replace(/[^a-z\d\s]/gi, '') : 'Not a string!'
+  }
 
-console.log(height(7))
+console.log(nothingSpecial('%^Take le$ft ##quad%r&a&nt'))
