@@ -30,7 +30,7 @@
 
   // 30) Escribe una función para convertir un nombre en iniciales. Este kata toma estrictamente dos palabras con un espacio entre ellas. La salida debe ser dos letras mayúsculas con un punto separándolas. Debe tener un aspecto como este: Sam Harris=>S.H patrick feeney=>P.F
 
- const abbrevName=(name)=>{
+ /*const abbrevName=(name)=>{
   return name.split(' ').map(item => item[0].toUpperCase()).join('.')
 }
-  console.log(abbrevName('sam farris'))
+  console.log(abbrevName('sam farris'))*/

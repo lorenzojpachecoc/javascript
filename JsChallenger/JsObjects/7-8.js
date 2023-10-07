@@ -8,7 +8,7 @@
 console.log(inicial('z','x'))*/
 
 //8) Escriba una función que tome dos matrices (a y b) como argumentos. Cree un objeto que tenga propiedades con las claves 'a' y los valores correspondientes 'b'. Devolver el objeto.
-            //por resolver
+            
 const twoArr = (a,b)=>{
     let object = Object.fromEntries(a.map((item,index)=>[item,b[index]]))
     return object

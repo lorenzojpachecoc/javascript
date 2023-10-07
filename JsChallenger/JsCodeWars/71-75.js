@@ -63,7 +63,7 @@ console.log(peopleObj([ { name: 'John', age: 23 },
 console.log(studentsByGrade); // Output: { 7: ['John', 'Bob'], 8: ['Alice', 'Charlie'] }
 NOTA : Usar reduce*/
 
-const studentsByGrade =(students)=>{
+/*const studentsByGrade =(students)=>{
     return students.reduce((prev,{name,grade})=>({
         ...prev,[grade]:students.filter((item)=>item.grade === grade).map((ele)=>ele.name)
        }  
@@ -74,4 +74,4 @@ const studentsByGrade =(students)=>{
     { name: 'Alice', grade: 8 },
     { name: 'Bob', grade: 7 },
     { name: 'Charlie', grade: 8 }
-  ]))
+  ]))*/

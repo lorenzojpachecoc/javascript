@@ -28,11 +28,11 @@ obj.yourSignature = "Whatever";
 
 	// 89) El chico del seguro vuelve a llamar y se disculpa. Encontraron otra póliza hecha por su cónyuge, pero esta está limitada a cubrir un máximo determinado en pérdidas (por ejemplo, 50.000 €). Le envías una factura a tu cónyuge por la diferencia que perdiste. Dado un objeto de los objetos sustraídos y un límite, devolver la diferencia entre el valor total de esos objetos y el límite de la póliza.
 	
-	const calculateDifference=(obj, limit)=> {
+	/*const calculateDifference=(obj, limit)=> {
 		let result= Object.values(obj).reduce((a,b)=>a+b)
 	 return result-limit
 	}
-	console.log(calculateDifference({ skate: 200, painting: 200, shoes: 1 }, 400))
+	console.log(calculateDifference({ skate: 200, painting: 200, shoes: 1 }, 400))*/
 
 	// 90) Su cónyuge no está preocupado por la pérdida de bienes materiales sino por su mascota favorita. ¡¿Se ha ido?! Dado un objeto de los artículos robados y una cadena en minúsculas que representa el nombre de la mascota (por ejemplo, "rambo"), devuelva: "Rambo is gone..."si el nombre está en la lista. "Rambo is here!"si el nombre no está en la lista. Tenga en cuenta que la primera letra del nombre en la declaración de devolución está en mayúscula.
 

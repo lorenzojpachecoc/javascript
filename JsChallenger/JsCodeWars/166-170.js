@@ -29,7 +29,7 @@ console.log(isPangram('The quick brown fox jumps over the lazy dog'))*/
 // 169) Suma todos los números de una matriz dada (cq. list), excepto el elemento más alto y el más bajo (¡por valor, no por índice!). El elemento más alto o más bajo, respectivamente, es un solo elemento en cada borde, incluso si hay más de uno con el mismo valor. Cuidado con la validación de entrada.
 
 const sumArr = (arr) => {
-  return arr ? arr.sort((a,b)=> a-b).slice(1,-1).reduce((prev,cur)=> prev+cur) : 0
+  return arr ? arr.sort((a,b)=> a-b).slice(1,-1).reduce((prev,cur)=> prev+cur,0) : 0
 }
 console.log(sumArr([6, 2, 1, 8, 10]))
 

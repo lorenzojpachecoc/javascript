@@ -65,8 +65,8 @@ console.log(toRepeat(2,'Bye'))*/
 
 console.log(arrObj(['Oliver', 'estructuras', 'algoritmos', 'estamostrabajando']))*/
 
-const myArr=(arr)=>{
- return arr[Math.floor(Math.random() * (Math.floor(array.length) - Math.ceil(0) ) + Math.ceil(0))];
+/*const myArr=(arr)=>{
+ return 
 }
 
-console.log(myArr('ANA',{name:jose}))
+console.log(myArr('ANA',{name:jose}))*/

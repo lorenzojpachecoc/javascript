@@ -8,7 +8,7 @@
 console.log(myObj({j:9,i:2,x:3,z:4}))*/
 
 //12) Escribe una función que tome un objeto como argumento. Debería devolver un objeto con todas las propiedades del objeto original. excepto la propiedad con clave 'b'
-                    //por terminar
+
 const myObj=(obj)=>{
     delete obj.b;
     let result= obj
