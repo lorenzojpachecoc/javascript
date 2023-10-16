@@ -46,4 +46,4 @@
                             return num < 0 ? num : -num
                           }
 
-                          console.log(makeNegative(-45))
+                          console.log(makeNegative(-44))
